@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Manufaktura autorskich mebli premium - komody, regały, stoliki - Mazini Design</title>
+<meta name="description" content="Mazini Design: polska manufaktura autorskich mebli ze stali, szkła i drewna. Komody Canto, Legero, Velo i Como, regały, stoliki i wieszak Rayo. Kolor konstrukcji i frontów pod Państwa wnętrze.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#70142D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2370142D'/%3E%3Cpath d='M5 25 13 7l6 5-8 13z' fill='none' stroke='%23fff' stroke-width='1.4'/%3E%3Cpath d='M20 12l5-5 3 18h-3z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/mar.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/j400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/webp" media="(max-width:1199px)" imagesrcset="foto/hero-m-480.webp 480w, foto/hero-m-640.webp 640w, foto/hero-m-800.webp 800w, foto/hero-m-1000.webp 1000w" imagesizes="100vw" fetchpriority="high">
+<link rel="preload" as="image" type="image/webp" media="(min-width:1200px)" imagesrcset="foto/hero-d-1000.webp 1000w, foto/hero-d-1400.webp 1400w, foto/hero-d-1800.webp 1800w, foto/hero-d-2400.webp 2400w" imagesizes="(min-width:2200px) 1700px, 72vw" fetchpriority="high">
+<style>
+@font-face{font-family:Mar;src:url(fonts/mar.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Jo;src:url(fonts/j400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Jo;src:url(fonts/j500.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:Marf;src:local("Georgia");size-adjust:96%;ascent-override:92%}
+@font-face{font-family:Jof;src:local("Arial");size-adjust:95%;ascent-override:100%}
+:root{--b:#70142D;--bd:#560F22;--ink:#1C1A1D;--mute:#56525A;--gray:#EEF0F3;--line:#D8DADF;--pad:clamp(16px,4vw,64px);--max:2240px;--hd:68px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hd)}
+body{font:400 17px/1.6 Jo,Jof,system-ui,sans-serif;color:var(--ink);background:#fff;-webkit-text-size-adjust:100%;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:Mar,Marf,Georgia,serif;font-weight:400;line-height:1.14;letter-spacing:-.005em}
+h2{font-size:clamp(30px,3.2vw,52px)}
+h3{font-size:clamp(21px,1.6vw,26px)}
+.uk>*,.canto>*,.arch>*,.kon>*,.zd>*,.kol>*{min-width:0}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.btn{display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:0 34px 0 24px;background:var(--b);color:#fff;font:500 17px/1 Jo,Jof,sans-serif;text-decoration:none;border:0;cursor:pointer;clip-path:polygon(0 0,calc(100% - 18px) 0,100% 100%,0 100%);transition:background .2s}
+.btn:hover{background:var(--bd)}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--b);outline-offset:3px}
+/* naglowek */
+#top{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--line)}
+#top .wrap{display:flex;align-items:center;gap:24px;height:var(--hd)}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--b);flex:none}
+.logo svg{width:58px;height:28px}
+.logo span{font:400 17px/1 Mar,Marf,serif;letter-spacing:.16em;white-space:nowrap}
+#top nav{margin-left:auto}
+.menu{display:flex;gap:clamp(16px,2vw,34px);list-style:none;padding:0}
+@media (min-width:1100px){.tel{margin-left:clamp(16px,2.4vw,44px)}}
+.menu a{text-decoration:none;font-size:16px;padding:8px 0;border-bottom:2px solid transparent}
+.menu a:hover,.menu a.on{border-color:var(--b)}
+.tel{flex:none;font-weight:500;text-decoration:none;white-space:nowrap;display:flex;align-items:center;gap:8px}
+.tel svg{width:18px;height:18px;color:var(--b)}
+#burger{display:none}
+@media (max-width:1099px){
+ .menu{position:fixed;inset:var(--hd) 0 auto 0;flex-direction:column;gap:0;background:#fff;padding:8px var(--pad) 24px;border-bottom:1px solid var(--line);transform:translateY(-8px);opacity:0;visibility:hidden;transition:.2s}
+ #top.open .menu{transform:none;opacity:1;visibility:visible}
+ .menu a{display:block;font:400 24px/1.2 Mar,Marf,serif;padding:14px 0;border-bottom:1px solid var(--line)}
+ .menu a.on{color:var(--b);border-color:var(--line)}
+ #burger{flex:none;display:flex;flex-direction:column;justify-content:center;gap:6px;width:48px;height:48px;margin-left:4px;background:none;border:0;cursor:pointer;padding:12px}
+ #burger i{display:block;height:2px;background:var(--ink);transition:.2s}
+ #top.open #burger i:first-child{transform:translateY(4px) rotate(45deg)}
+ #top.open #burger i:last-child{transform:translateY(-4px) rotate(-45deg)}
+ .tel{margin-left:auto}
+}
+@media (max-width:520px){#top .wrap{gap:8px}.logo{gap:9px}.logo svg{width:50px;height:24px}.tel span{display:none}.tel{width:46px;height:48px;justify-content:center}.tel svg{width:22px;height:22px}.logo span{font-size:14.5px;letter-spacing:.11em}#burger{margin-left:0;width:46px}}
+/* hero */
+.hero{position:relative;background:#FCFCFC;display:flex;flex-direction:column;min-height:calc(100svh - var(--hd));overflow:hidden}
+.hero .tx{padding:clamp(26px,5svh,48px) 0 22px;max-width:760px}
+.hero h1{font-size:clamp(29px,min(8.7vw,4.9svh),44px)}
+.hero .lead{margin-top:16px;font-size:clamp(17px,4.4vw,19px);color:#36323A;max-width:36em}
+.hero .cta{margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
+.hero .info{font-size:15px;color:var(--mute)}
+.hero picture{order:2;margin-top:10px;display:block}
+.hero picture img{width:100%;max-height:max(150px,calc(100svh - var(--hd) - var(--txh,430px)));object-fit:cover;object-position:50% 100%}
+.hero .pod{order:1;margin-top:auto;padding:0 var(--pad);font-size:14px;color:#4B4550}
+@media (min-width:1200px){
+ .hero{--ih:min(66svh,40vw);background:#FCFCFC url(foto/tlo-pas.webp) left bottom/100% var(--ih) no-repeat;min-height:max(600px,calc(100svh - var(--hd)))}
+ .hero .wrap{position:relative;z-index:2}
+ .hero .tx{padding:clamp(48px,9svh,120px) 0 40px;max-width:min(560px,40vw)}
+ .hero h1{font-size:clamp(40px,3.3vw,62px)}
+ .hero .lead{font-size:19px}
+ .hero picture{position:absolute;right:0;bottom:0;margin:0}
+ .hero picture img{height:var(--ih);width:auto;max-height:none;max-width:none}
+ .hero .pod{position:absolute;right:var(--pad);bottom:24px;max-width:22em;text-align:right;padding:0;font-size:13px}
+}
+@media (min-width:1700px){.hero .tx{max-width:700px}}
+@media (min-width:2200px){.hero .tx{max-width:860px}.hero h1{font-size:68px}.hero .lead{font-size:21px}}
+/* sekcje */
+section{padding:clamp(64px,8vw,128px) 0}
+.sz{background:var(--gray)}
+.glowa{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:18px 40px;margin-bottom:clamp(28px,3vw,48px)}
+.glowa p{max-width:40em;color:var(--mute);margin-top:12px}
+/* kolekcja */
+.tor{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(250px,74vw,330px);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px;cursor:grab}
+.tor::-webkit-scrollbar{display:none}
+.tor.drag{cursor:grabbing;scroll-snap-type:none}
+.tor>*{scroll-snap-align:start}
+@media (min-width:900px){.tor{grid-auto-columns:calc((100% - 60px)/4)}}
+@media (min-width:1800px){.tor{grid-auto-columns:calc((100% - 100px)/6)}}
+.mebel .f{position:relative;background:#F6F5F6;overflow:hidden}
+.mebel .f img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .5s}
+.mebel:hover .f img{transform:scale(1.03)}
+.mebel .f::after{content:"";position:absolute;right:0;bottom:0;width:26px;height:26px;background:var(--b);clip-path:polygon(100% 0,100% 100%,0 100%)}
+.mebel h3{margin-top:16px}
+.mebel .cena{font-weight:500;margin-top:4px}
+.mebel p{font-size:15px;color:var(--mute);margin-top:6px;line-height:1.5}
+.nav{display:flex;gap:10px}
+.nav button{width:52px;height:52px;border:1px solid var(--ink);background:#fff;cursor:pointer;display:grid;place-items:center}
+.nav button:hover{background:var(--ink);color:#fff}
+.nav svg{width:16px;height:16px}
+.uw{font-size:14px;color:var(--mute);margin-top:22px}
+/* canto */
+.canto{display:grid;gap:clamp(28px,4vw,72px);align-items:center}
+@media (min-width:960px){.canto{grid-template-columns:1.05fr 1fr}}
+.canto .zd{display:grid;grid-template-columns:1fr 1.5fr;gap:12px;align-items:end}
+.canto h2{max-width:14em}
+.canto p{margin-top:18px;max-width:36em}
+.canto .wyr{font:400 clamp(21px,1.7vw,27px)/1.35 Mar,Marf,serif;color:var(--b);margin-top:24px;max-width:24em}
+.lbb{display:block;padding:0;border:0;background:#F6F5F6;cursor:zoom-in;width:100%}
+.lbb img{width:100%;height:auto}
+/* proces */
+.proc{background:var(--b);color:#fff}
+.proc .uk{display:grid;gap:clamp(32px,5vw,96px)}
+@media (min-width:1000px){.proc .uk{grid-template-columns:1fr 1fr;align-items:start}}
+.proc .glowa p{color:#F0DCE2}
+.kroki{list-style:none;padding:0;border-top:1px solid rgba(255,255,255,.28)}
+.kroki li{display:grid;grid-template-columns:56px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.28)}
+.kroki svg{width:56px;height:40px}
+.kroki b{display:block;font:400 22px/1.25 Mar,Marf,serif}
+.kroki span{display:block;color:#F0DCE2;margin-top:4px;font-size:16px}
+.proc .zd{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.proc .zd button:first-child{grid-column:1/-1}
+.proc .zd .lbb{background:#5E1126}
+blockquote{margin-top:28px;font:400 clamp(20px,1.6vw,25px)/1.45 Mar,Marf,serif}
+blockquote footer{font:400 15px/1.4 Jo,Jof,sans-serif;color:#F0DCE2;margin-top:12px}
+/* kolory */
+.kol{display:grid;gap:16px;margin-top:8px}
+@media (min-width:800px){.kol{grid-template-columns:1fr 1fr}}
+.kol div{border-top:1px solid var(--line);padding-top:14px}
+.kol b{font-weight:500}
+.kol p{color:var(--mute);font-size:16px;margin-top:4px}
+#ar{grid-auto-columns:clamp(240px,70vw,380px)}
+@media (min-width:900px){#ar{grid-auto-columns:calc((100% - 60px)/4)}}
+@media (min-width:1800px){#ar{grid-auto-columns:calc((100% - 100px)/6)}}
+#ar img{aspect-ratio:4/5;object-fit:cover;width:100%}
+/* architekci */
+.arch{display:grid;gap:clamp(28px,4vw,80px);align-items:center}
+@media (min-width:900px){.arch{grid-template-columns:minmax(260px,.8fr) 1.2fr}}
+.arch ul{margin-top:20px;padding:0;list-style:none}
+.arch li{padding:12px 0 12px 30px;border-bottom:1px solid var(--line);position:relative}
+.arch li::before{content:"";position:absolute;left:0;top:19px;width:14px;height:12px;background:var(--b);clip-path:polygon(0 100%,50% 0,100% 100%)}
+.arch .os{margin-top:22px;color:var(--mute);font-size:16px}
+.arch .btn{margin-top:26px}
+/* kontakt */
+.kon{display:grid;gap:clamp(32px,5vw,96px)}
+@media (min-width:960px){.kon{grid-template-columns:.9fr 1.1fr}}
+.dane{margin-top:24px;display:grid;gap:4px}
+.dane a{font:400 clamp(24px,2.2vw,34px)/1.3 Mar,Marf,serif;text-decoration:none;color:var(--b);overflow-wrap:anywhere}
+.dane p{color:var(--mute)}
+.soc{margin-top:22px;display:flex;gap:22px}
+.soc a{font-weight:500}
+form{display:grid;gap:16px;background:var(--gray);padding:clamp(20px,3vw,40px)}
+@media (min-width:600px){form .dwa{display:grid;grid-template-columns:1fr 1fr;gap:16px}}
+form .dwa{display:grid;gap:16px}
+label{display:grid;gap:6px;font-size:15px;font-weight:500}
+input,select,textarea{font:400 17px/1.4 Jo,Jof,sans-serif;padding:13px 14px;border:1px solid #B9BBC2;background:#fff;color:var(--ink);border-radius:0;width:100%}
+textarea{min-height:130px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--b);outline-offset:-1px;border-color:var(--b)}
+[aria-invalid=true]{border-color:#B3261E}
+.zg{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:14px;color:var(--mute);grid-template-columns:none}
+.zg input{width:20px;height:20px;margin-top:2px;flex:none}
+#msg{background:#fff;border-left:3px solid var(--b);padding:14px 16px;font-size:15px}
+/* stopka */
+.stopka{background:#1C1A1D;color:#D5D2D8;padding:56px 0 28px;position:relative;overflow:hidden}
+.stopka .wz{position:absolute;right:-40px;bottom:-30px;width:min(520px,70vw);height:auto;color:#fff;opacity:.07;pointer-events:none}
+.stopka .gr{display:grid;grid-template-columns:1fr 1fr;gap:28px;position:relative}
+@media (min-width:900px){.stopka .gr{grid-template-columns:1.4fr 1fr 1fr 1fr}}
+.stopka .logo{color:#fff}
+.stopka .h{font:500 15px/1.3 Jo,Jof,sans-serif;color:#fff;margin-bottom:10px}
+.stopka ul{list-style:none;padding:0;display:grid;gap:6px;font-size:15px}
+.stopka a{text-decoration:none}
+.stopka a:hover{text-decoration:underline}
+.stopka .op{grid-column:1/-1;font-size:15px;max-width:30em}
+@media (min-width:900px){.stopka .op{grid-column:auto}}
+.stopka .dol{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 24px;border-top:1px solid #3A363D;margin-top:40px;padding-top:20px;font-size:14px;position:relative}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+/* lightbox */
+#lb{position:fixed;inset:0;z-index:60;background:rgba(20,18,21,.94);display:none;align-items:center;justify-content:center}
+#lb.on{display:flex}
+#lb figure{display:flex;flex-direction:column;align-items:center;gap:12px;padding:56px 16px 24px;max-width:100%;max-height:100%}
+#lb img{max-width:min(92vw,1600px);max-height:80vh;width:auto;height:auto;object-fit:contain}
+#lb figcaption{color:#E8E5EA;font-size:15px;text-align:center}
+#lb button{position:absolute;background:none;border:0;color:#fff;cursor:pointer;width:52px;height:52px;font-size:30px;line-height:1}
+#lb .x{top:8px;right:8px}#lb .p{left:6px;top:50%}#lb .n{right:6px;top:50%}
+@media (min-width:2000px){body{font-size:19px}.menu a{font-size:17px}.mebel p,.kol p{font-size:17px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header id="top">
+ <div class="wrap">
+  <a class="logo" href="#start" aria-label="Mazini Design - strona główna"><svg viewBox="0 0 700 340" aria-hidden="true"><defs><clipPath id="lg1"><path d="M22 300 192 30 333 128 323 152 135 300z"/></clipPath></defs><g stroke="#70142D" stroke-width="10" fill="none"><path d="M22 300 192 30 333 128 323 152 135 300z"/><g clip-path="url(#lg1)" stroke-width="8"><line x1="0" y1="48" x2="700" y2="48"/><line x1="0" y1="69" x2="700" y2="69"/><line x1="0" y1="90" x2="700" y2="90"/><line x1="0" y1="111" x2="700" y2="111"/><line x1="0" y1="132" x2="700" y2="132"/><line x1="0" y1="153" x2="700" y2="153"/><line x1="0" y1="174" x2="700" y2="174"/><line x1="0" y1="195" x2="700" y2="195"/><line x1="0" y1="216" x2="700" y2="216"/><line x1="0" y1="237" x2="700" y2="237"/><line x1="0" y1="258" x2="700" y2="258"/><line x1="0" y1="279" x2="700" y2="279"/></g><path d="M382 160 588 304"/></g><path d="M365 128 498 32 672 302 598 302z" fill="#70142D"/></svg><span>MAZINI DESIGN</span></a>
+  <nav aria-label="Menu główne"><ul class="menu">
+   <li><a href="#kolekcja">Kolekcja</a></li>
+   <li><a href="#canto">Komoda Canto</a></li>
+   <li><a href="#zamowienie">Na zamówienie</a></li>
+   <li><a href="#kolory">Kolory</a></li>
+   <li><a href="#architekci">Dla architektów</a></li>
+   <li><a href="#kontakt">Kontakt</a></li>
+  </ul></nav>
+  <a class="tel" href="tel:+48787494404" aria-label="Zadzwoń: 787 494 404"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><span>787 494 404</span></a>
+  <button id="burger" type="button" aria-expanded="false" aria-controls="top" aria-label="Otwórz menu"><i></i><i></i></button>
+ </div>
+</header>
+<main>
+<div class="hero" id="start">
+ <div class="wrap">
+  <div class="tx">
+   <h1>Manufaktura autorskich mebli premium. Projektujemy z pasją, wykonujemy z precyzją.</h1>
+   <p class="lead">Komody, regały i stoliki ze stali, szkła i drewna, robione ręcznie w krótkich seriach. Kolor dobieramy pod Państwa wnętrze.</p>
+   <div class="cta"><a class="btn" href="#kolekcja">Zobacz kolekcję</a><span class="info">tel. 787 494 404, pn-pt 8:00-16:00</span></div>
+  </div>
+ </div>
+ <picture><source media="(max-width:1199px)" srcset="foto/hero-m-480.webp 480w, foto/hero-m-640.webp 640w, foto/hero-m-800.webp 800w, foto/hero-m-1000.webp 1000w" sizes="100vw"><img src="foto/hero-d-1400.webp" srcset="foto/hero-d-1000.webp 1000w, foto/hero-d-1400.webp 1400w, foto/hero-d-1800.webp 1800w, foto/hero-d-2400.webp 2400w" sizes="(min-width:2200px) 1700px, 72vw" width="1400" height="802" fetchpriority="high" alt="Komoda Canto Mazini Design: liliowe szafki na magentowej stalowej kratownicy"></picture>
+ <p class="pod">Komoda Canto, nominacja 4 Design Days 2026</p>
+</div>
+
+<section id="kolekcja">
+ <div class="wrap">
+  <div class="glowa">
+   <div><h2>Kolekcja Mazini</h2><p>Każdy z tych mebli ma zastrzeżony wzór przemysłowy i powstaje w naszej manufakturze. Wymiary, wykończenie i kolor możemy dopasować do projektu.</p></div>
+   <div class="nav" data-nav="kol"><button type="button" data-k="-1" aria-label="Poprzednie meble"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M12 1 3 8l9 7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button><button type="button" data-k="1" aria-label="Następne meble"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 1l9 7-9 7z" fill="currentColor"/></svg></button></div>
+  </div>
+  <div class="tor" id="kol" data-tor><article class="mebel"><div class="f"><img data-src="foto/p-canto-480.webp" data-srcset="foto/p-canto-320.webp 320w, foto/p-canto-480.webp 480w, foto/p-canto-640.webp 640w, foto/p-canto-900.webp 900w" sizes="(max-width:899px) 74vw, (min-width:1800px) 16vw, 24vw" width="480" height="600" decoding="async" alt="Liliowa komoda Canto na magentowej stalowej kratownicy"></div><h3>Komoda Canto</h3><p class="cena">od 8 550 zł</p><p>TOP 5 w kategorii meble, 4 Design Days 2026. Szafki na stalowej kratownicy.</p></article><article class="mebel"><div class="f"><img data-src="foto/p-legero-480.webp" data-srcset="foto/p-legero-320.webp 320w, foto/p-legero-480.webp 480w, foto/p-legero-640.webp 640w, foto/p-legero-900.webp 900w" sizes="(max-width:899px) 74vw, (min-width:1800px) 16vw, 24vw" width="480" height="600" decoding="async" alt="Komoda Legero w złotej ramie z ażurowym modułem pośrodku"></div><h3>Komoda Legero</h3><p class="cena">od 8 520 zł</p><p>Cztery szuflady i ażurowy moduł w stalowej ramie.</p></article><article class="mebel"><div class="f"><img data-src="foto/p-velo-480.webp" data-srcset="foto/p-velo-320.webp 320w, foto/p-velo-480.webp 480w, foto/p-velo-640.webp 640w, foto/p-velo-900.webp 900w" sizes="(max-width:899px) 74vw, (min-width:1800px) 16vw, 24vw" width="480" height="600" decoding="async" alt="Szara komoda Velo z ażurowym modułem w stalowej ramie"></div><h3>Komoda Velo</h3><p class="cena">od 6 750 zł</p><p>Matowe szafki w stalowej ramie, charakter industrialny.</p></article><article class="mebel"><div class="f"><img data-src="foto/p-como-480.webp" data-srcset="foto/p-como-320.webp 320w, foto/p-como-480.webp 480w, foto/p-como-640.webp 640w, foto/p-como-900.webp 900w" sizes="(max-width:899px) 74vw, (min-width:1800px) 16vw, 24vw" width="480" height="600" decoding="async" alt="Czarna komoda Como z trzema modułami w stalowej ramie"></div><h3>Komoda Como</h3><p class="cena">od 5 900 zł</p><p>Trzy moduły zawieszone w stalowej konstrukcji.</p></article><article class="mebel"><div class="f"><img data-src="foto/p-szklany-480.webp" data-srcset="foto/p-szklany-320.webp 320w, foto/p-szklany-480.webp 480w, foto/p-szklany-640.webp 640w, foto/p-szklany-900.webp 900w" sizes="(max-width:899px) 74vw, (min-width:1800px) 16vw, 24vw" width="480" height="600" decoding="async" alt="Czarny regał szklany Como z szafkami w stalowej ramie"></div><h3>Regał szklany Como</h3><p class="cena">od 5 800 zł</p><p>Stal i szkło, szafki z ryflowanymi frontami.</p></article><article class="mebel"><div class="f"><img data-src="foto/p-opti-480.webp" data-srcset="foto/p-opti-320.webp 320w, foto/p-opti-480.webp 480w, foto/p-opti-640.webp 640w, foto/p-opti-900.webp 900w" sizes="(max-width:899px) 74vw, (min-width:1800px) 16vw, 24vw" width="480" height="600" decoding="async" alt="Regał Como Opti ze szklanymi szafkami w czarnej ramie"></div><h3>Regał Como Opti</h3><p class="cena">od 6 600 zł</p><p>Szklane szafki, 148 x 48 x 48 cm.</p></article><article class="mebel"><div class="f"><img data-src="foto/p-velvet-480.webp" data-srcset="foto/p-velvet-320.webp 320w, foto/p-velvet-480.webp 480w, foto/p-velvet-640.webp 640w, foto/p-velvet-900.webp 900w" sizes="(max-width:899px) 74vw, (min-width:1800px) 16vw, 24vw" width="480" height="600" decoding="async" alt="Regał Como Velvet w kobaltowej ramie z kolorowymi szafkami"></div><h3>Regał Como Velvet</h3><p class="cena">od 5 800 zł</p><p>Aksamitna matowa płyta, szafki tip-on, 67 x 148 x 48 cm.</p></article><article class="mebel"><div class="f"><img data-src="foto/p-rayo-480.webp" data-srcset="foto/p-rayo-320.webp 320w, foto/p-rayo-480.webp 480w, foto/p-rayo-640.webp 640w, foto/p-rayo-900.webp 900w" sizes="(max-width:899px) 74vw, (min-width:1800px) 16vw, 24vw" width="480" height="600" decoding="async" alt="Żółty stalowy wieszak Rayo"></div><h3>Wieszak Rayo</h3><p class="cena">od 1 955 zł</p><p>Rzeźbiarska forma ze stali, wysokość 170 cm.</p></article><article class="mebel"><div class="f"><img data-src="foto/p-cube-480.webp" data-srcset="foto/p-cube-320.webp 320w, foto/p-cube-480.webp 480w, foto/p-cube-640.webp 640w, foto/p-cube-900.webp 900w" sizes="(max-width:899px) 74vw, (min-width:1800px) 16vw, 24vw" width="480" height="600" decoding="async" alt="Miętowy stolik Cube Loft z ażurowym blatem"></div><h3>Stolik Cube Loft</h3><p class="cena">od 800 zł</p><p>Stal malowana proszkowo, do wnętrz i na zewnątrz.</p></article><article class="mebel"><div class="f"><img data-src="foto/p-loop-480.webp" data-srcset="foto/p-loop-320.webp 320w, foto/p-loop-480.webp 480w, foto/p-loop-640.webp 640w, foto/p-loop-841.webp 841w" sizes="(max-width:899px) 74vw, (min-width:1800px) 16vw, 24vw" width="480" height="600" decoding="async" alt="Niebieski stolik Loop przy basenie"></div><h3>Stolik Loop</h3><p class="cena">od 980 zł</p><p>Stolik pomocniczy, sprawdzi się też na tarasie.</p></article></div>
+  <p class="uw">Ceny ze sklepu mazini.pl, stan na 17.11.2026, w zależności od wybranego wariantu.</p>
+ </div>
+</section>
+
+<section class="sz" id="canto">
+ <div class="wrap canto">
+  <div class="zd"><button type="button" class="lbb" data-lb="canto" data-src="foto/canto-det-1300.webp" data-cap="Komoda Canto, szczegół kratownicy"><img data-src="foto/canto-det-720.webp" data-srcset="foto/canto-det-480.webp 480w, foto/canto-det-720.webp 720w, foto/canto-det-960.webp 960w, foto/canto-det-1300.webp 1300w" sizes="(max-width:959px) 55vw, 30vw" width="720" height="900" decoding="async" alt="Szczegół komody Canto: liliowe szafki na magentowej kratownicy"></button><button type="button" class="lbb" data-lb="canto" data-src="foto/nominacja-1536.webp" data-cap="Komoda Canto z nominacją 4 Design Days, nagroda Dobry Design"><img data-src="foto/nominacja-720.webp" data-srcset="foto/nominacja-480.webp 480w, foto/nominacja-720.webp 720w, foto/nominacja-1000.webp 1000w, foto/nominacja-1536.webp 1536w" sizes="(max-width:959px) 92vw, 46vw" width="720" height="480" decoding="async" alt="Komoda Canto i znak nominacji 4 Design Days do nagrody Dobry Design"></button></div>
+  <div>
+   <h2>Komoda Canto w finałowej piątce 4 Design Days</h2>
+   <p>Canto to autorski projekt Mazini Design nominowany do TOP 5 w kategorii meble podczas 4 Design Days 2026, jednego z najważniejszych wydarzeń poświęconych współczesnemu designowi w Polsce.</p>
+   <p>Trzy matowe bryły leżą na stalowej kratownicy z ukośnych profili. Konstrukcja jest lekka dla oka, a przy tym sztywna i trwała, bo każde połączenie wykonujemy ręcznie.</p>
+   <p class="wyr">Funkcja, forma i jakość wykonania w pełnej równowadze.</p>
+   <a class="btn" style="margin-top:28px" href="#kontakt">Zapytaj o Canto</a>
+  </div>
+ </div>
+</section>
+
+<section class="proc" id="zamowienie">
+ <div class="wrap uk">
+  <div>
+   <div class="glowa" style="display:block"><h2>Od pierwszego szkicu do gotowego mebla</h2><p>Projekty indywidualne tworzymy od podstaw, w ścisłej współpracy z klientem lub architektem. Nie adaptujemy gotowych schematów.</p></div>
+   <ol class="kroki"><li><svg viewBox="0 0 56 40" aria-hidden="true"><defs><clipPath id="k1"><path d="M2 38 22 2 38 14 34 22 16 38z"/></clipPath></defs><g fill="none" stroke="#fff" stroke-width="1.4"><path d="M2 38 22 2 38 14 34 22 16 38z"/></g><path d="M40 14 48 6 55 38 49 38z" fill="#fff" opacity="0.40"/></svg><div><b>Analiza potrzeb</b><span>Poznajemy założenia projektu, funkcję mebla, styl wnętrza i oczekiwania techniczne.</span></div></li><li><svg viewBox="0 0 56 40" aria-hidden="true"><defs><clipPath id="k2"><path d="M2 38 22 2 38 14 34 22 16 38z"/></clipPath></defs><g fill="none" stroke="#fff" stroke-width="1.4"><path d="M2 38 22 2 38 14 34 22 16 38z"/><g clip-path="url(#k2)"><line x1="0" y1="2.0" x2="56" y2="2.0"/><line x1="0" y1="11.0" x2="56" y2="11.0"/><line x1="0" y1="20.0" x2="56" y2="20.0"/><line x1="0" y1="29.0" x2="56" y2="29.0"/><line x1="0" y1="38.0" x2="56" y2="38.0"/></g></g><path d="M40 14 48 6 55 38 49 38z" fill="#fff" opacity="0.55"/></svg><div><b>Projekt i koncepcja</b><span>Forma dopasowana do wnętrza: wymiary, materiały, kolorystyka i detale konstrukcyjne.</span></div></li><li><svg viewBox="0 0 56 40" aria-hidden="true"><defs><clipPath id="k3"><path d="M2 38 22 2 38 14 34 22 16 38z"/></clipPath></defs><g fill="none" stroke="#fff" stroke-width="1.4"><path d="M2 38 22 2 38 14 34 22 16 38z"/><g clip-path="url(#k3)"><line x1="0" y1="2.0" x2="56" y2="2.0"/><line x1="0" y1="8.0" x2="56" y2="8.0"/><line x1="0" y1="14.0" x2="56" y2="14.0"/><line x1="0" y1="20.0" x2="56" y2="20.0"/><line x1="0" y1="26.0" x2="56" y2="26.0"/><line x1="0" y1="32.0" x2="56" y2="32.0"/><line x1="0" y1="38.0" x2="56" y2="38.0"/></g></g><path d="M40 14 48 6 55 38 49 38z" fill="#fff" opacity="0.70"/></svg><div><b>Dobór materiałów</b><span>Stal, szkło i drewno; każdy projekt może być w pełni spersonalizowany.</span></div></li><li><svg viewBox="0 0 56 40" aria-hidden="true"><defs><clipPath id="k4"><path d="M2 38 22 2 38 14 34 22 16 38z"/></clipPath></defs><g fill="none" stroke="#fff" stroke-width="1.4"><path d="M2 38 22 2 38 14 34 22 16 38z"/><g clip-path="url(#k4)"><line x1="0" y1="2.0" x2="56" y2="2.0"/><line x1="0" y1="5.4" x2="56" y2="5.4"/><line x1="0" y1="8.8" x2="56" y2="8.8"/><line x1="0" y1="12.2" x2="56" y2="12.2"/><line x1="0" y1="15.6" x2="56" y2="15.6"/><line x1="0" y1="19.0" x2="56" y2="19.0"/><line x1="0" y1="22.4" x2="56" y2="22.4"/><line x1="0" y1="25.8" x2="56" y2="25.8"/><line x1="0" y1="29.2" x2="56" y2="29.2"/><line x1="0" y1="32.6" x2="56" y2="32.6"/><line x1="0" y1="36.0" x2="56" y2="36.0"/></g></g><path d="M40 14 48 6 55 38 49 38z" fill="#fff" opacity="0.85"/></svg><div><b>Ręczne wykonanie</b><span>Mebel powstaje w naszej manufakturze, z kontrolą jakości na każdym etapie.</span></div></li><li><svg viewBox="0 0 56 40" aria-hidden="true"><defs><clipPath id="k5"><path d="M2 38 22 2 38 14 34 22 16 38z"/></clipPath></defs><g fill="none" stroke="#fff" stroke-width="1.4"><path d="M2 38 22 2 38 14 34 22 16 38z"/></g><path d="M2 38 22 2 38 14 34 22 16 38z" fill="#fff"/><path d="M40 14 48 6 55 38 49 38z" fill="#fff" opacity="1.00"/></svg><div><b>Gotowy mebel</b><span>Funkcjonalna, trwała i spójna część Państwa wnętrza.</span></div></li></ol>
+   <blockquote>„Nie interesuje mnie masowa produkcja. Meble, które projektuję, są efektem przemyślanego procesu.”<footer>Dariusz Majiczek, projektant marki Mazini</footer></blockquote>
+  </div>
+  <div class="zd"><button type="button" class="lbb" data-lb="rz" data-src="foto/rzem-1-1000.webp" data-cap="Złota rama komody Legero i ażurowy moduł z blachy perforowanej"><img data-src="foto/rzem-1-720.webp" data-srcset="foto/rzem-1-480.webp 480w, foto/rzem-1-720.webp 720w, foto/rzem-1-1000.webp 1000w" sizes="(max-width:999px) 92vw, 46vw" width="720" height="540" decoding="async" alt="Złota rama komody Legero i ażurowy moduł z blachy perforowanej"></button><button type="button" class="lbb" data-lb="rz" data-src="foto/rzem-2-800.webp" data-cap="Czarne ramy komody Como z szafkami"><img data-src="foto/rzem-2-600.webp" data-srcset="foto/rzem-2-400.webp 400w, foto/rzem-2-600.webp 600w, foto/rzem-2-800.webp 800w" sizes="(max-width:999px) 45vw, 23vw" width="600" height="800" decoding="async" alt="Czarne ramy komody Como z szafkami"></button><button type="button" class="lbb" data-lb="rz" data-src="foto/rzem-3-800.webp" data-cap="Regał szklany Como, rama i szafka z ryflowanym frontem"><img data-src="foto/rzem-3-600.webp" data-srcset="foto/rzem-3-400.webp 400w, foto/rzem-3-600.webp 600w, foto/rzem-3-800.webp 800w" sizes="(max-width:999px) 45vw, 23vw" width="600" height="800" decoding="async" alt="Regał szklany Como, rama i szafka z ryflowanym frontem"></button></div>
+ </div>
+</section>
+
+<section id="kolory">
+ <div class="wrap">
+  <div class="glowa">
+   <div><h2>Kolor pod Państwa projekt</h2><p>Stalowe konstrukcje malujemy proszkowo, fronty szafek wykańczamy matowo. Ten sam mebel może być stonowany w czerni albo wyrazisty w kobalcie i magencie.</p></div>
+   <div class="nav" data-nav="ar"><button type="button" data-k="-1" aria-label="Poprzednie aranżacje"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M12 1 3 8l9 7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button><button type="button" data-k="1" aria-label="Następne aranżacje"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 1l9 7-9 7z" fill="currentColor"/></svg></button></div>
+  </div>
+  <div class="tor" id="ar" data-tor><button type="button" class="lbb" data-lb="ar" data-src="foto/a1-816.webp" data-cap="Komoda Como w aranżacji w duchu Bauhausu"><img data-src="foto/a1-540.webp" data-srcset="foto/a1-360.webp 360w, foto/a1-540.webp 540w, foto/a1-720.webp 720w, foto/a1-816.webp 816w" sizes="(max-width:899px) 70vw, (min-width:1800px) 16vw, 24vw" width="540" height="675" decoding="async" alt="Komoda Como w aranżacji w duchu Bauhausu"></button><button type="button" class="lbb" data-lb="ar" data-src="foto/a2-842.webp" data-cap="Komoda Velo w nowoczesnym salonie"><img data-src="foto/a2-540.webp" data-srcset="foto/a2-360.webp 360w, foto/a2-540.webp 540w, foto/a2-720.webp 720w, foto/a2-842.webp 842w" sizes="(max-width:899px) 70vw, (min-width:1800px) 16vw, 24vw" width="540" height="675" decoding="async" alt="Komoda Velo w nowoczesnym salonie"></button><button type="button" class="lbb" data-lb="ar" data-src="foto/a3-819.webp" data-cap="Regał szklany Como z kolorowymi uchwytami"><img data-src="foto/a3-540.webp" data-srcset="foto/a3-360.webp 360w, foto/a3-540.webp 540w, foto/a3-720.webp 720w, foto/a3-819.webp 819w" sizes="(max-width:899px) 70vw, (min-width:1800px) 16vw, 24vw" width="540" height="675" decoding="async" alt="Regał szklany Como z kolorowymi uchwytami"></button><button type="button" class="lbb" data-lb="ar" data-src="foto/a4-1000.webp" data-cap="Regał Como Opti w aranżacji"><img data-src="foto/a4-540.webp" data-srcset="foto/a4-360.webp 360w, foto/a4-540.webp 540w, foto/a4-720.webp 720w, foto/a4-1000.webp 1000w" sizes="(max-width:899px) 70vw, (min-width:1800px) 16vw, 24vw" width="540" height="675" decoding="async" alt="Regał Como Opti w aranżacji"></button><button type="button" class="lbb" data-lb="ar" data-src="foto/a5-683.webp" data-cap="Komoda Como Plus w eleganckim wnętrzu"><img data-src="foto/a5-540.webp" data-srcset="foto/a5-360.webp 360w, foto/a5-540.webp 540w, foto/a5-683.webp 683w" sizes="(max-width:899px) 70vw, (min-width:1800px) 16vw, 24vw" width="540" height="675" decoding="async" alt="Komoda Como Plus w eleganckim wnętrzu"></button><button type="button" class="lbb" data-lb="ar" data-src="foto/a6-1000.webp" data-cap="Zielony stolik Loop na tarasie"><img data-src="foto/a6-540.webp" data-srcset="foto/a6-360.webp 360w, foto/a6-540.webp 540w, foto/a6-720.webp 720w, foto/a6-1000.webp 1000w" sizes="(max-width:899px) 70vw, (min-width:1800px) 16vw, 24vw" width="540" height="675" decoding="async" alt="Zielony stolik Loop na tarasie"></button></div>
+  <div class="kol">
+   <div><b>11 kolorów konstrukcji</b><p>biały mat, czarny mat, ceglany, czerwony, fiolet sygnałowy, kobaltowy, magenta, niebieski, pomarańczowy, zielony trzcinowy, żółty</p></div>
+   <div><b>9 kolorów szafek</b><p>azure, biały, burgund, ciemna zieleń, kaszmirowy, kurkumowy, liliowy, miętowy, szałwiowy; stoliki Cube w dowolnym kolorze z palety RAL</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="sz" id="architekci">
+ <div class="wrap arch">
+  <button type="button" class="lbb" data-lb="iza" data-src="foto/iza-800.webp" data-cap="Izabela Kózka, Mazini Design"><img data-src="foto/iza-600.webp" data-srcset="foto/iza-400.webp 400w, foto/iza-600.webp 600w, foto/iza-800.webp 800w" sizes="(max-width:899px) 92vw, 34vw" width="600" height="750" decoding="async" alt="Izabela Kózka przy szkicu mebla"></button>
+  <div>
+   <h2>Strefa projektanta</h2>
+   <p style="margin-top:16px;max-width:38em">Dla architektów i projektantów wnętrz. Wspieramy na każdym etapie: od koncepcji, przez dobór materiałów i kolorystyki, po realizację mebli dopasowanych do założeń projektu.</p>
+   <ul>
+    <li>próbniki materiałów i palety kolorów</li>
+    <li>personalizacja wymiarów, wykończeń i detali</li>
+    <li>wiedza techniczna potrzebna do projektu</li>
+    <li>meble do wnętrz prywatnych i komercyjnych</li>
+   </ul>
+   <p class="os">Współpracę z projektantami prowadzi osobiście Izabela Kózka, właścicielka Mazini Design.</p>
+   <a class="btn" href="#kontakt">Zapytaj o współpracę</a>
+  </div>
+ </div>
+</section>
+
+<section id="kontakt">
+ <div class="wrap kon">
+  <div>
+   <h2>Porozmawiajmy o Państwa wnętrzu</h2>
+   <p style="margin-top:16px;color:var(--mute);max-width:32em">Napiszą Państwo, jaki mebel lub jakie miejsce mają na myśli. Odpowiemy z propozycją wymiarów, kolorów i terminu.</p>
+   <div class="dane">
+    <a href="tel:+48787494404">+48 787 494 404</a>
+    <a href="mailto:biuro@mazini.pl">biuro@mazini.pl</a>
+    <p>poniedziałek - piątek, 8:00 - 16:00</p>
+   </div>
+   <div class="soc"><a href="https://www.instagram.com/mazini.design/" rel="noopener">Instagram</a><a href="https://www.facebook.com/profile.php?id=61575642684136" rel="noopener">Facebook</a></div>
+  </div>
+  <form id="form" novalidate>
+   <div class="dwa">
+    <label>Imię i nazwisko<input name="imie" autocomplete="name" required></label>
+    <label>Telefon lub e-mail<input name="kontakt" autocomplete="email" required></label>
+   </div>
+   <label>Czego dotyczy zapytanie
+    <select name="temat"><option>Mebel z kolekcji</option><option>Projekt indywidualny</option><option>Współpraca dla architektów</option><option>Inne</option></select>
+   </label>
+   <label>Wiadomość<textarea name="wiad" placeholder="np. komoda Canto, konstrukcja kobaltowa, szafki białe" required></textarea></label>
+   <label class="zg"><input type="checkbox" required> Zgadzam się na kontakt w sprawie zapytania.</label>
+   <div><button class="btn" type="submit">Wyślij zapytanie</button></div>
+   <p id="msg" hidden>Dziękujemy. To podgląd strony, więc formularz niczego jeszcze nie wysyła; po wdrożeniu wiadomość trafi na biuro@mazini.pl.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer class="stopka">
+ <svg class="wz" viewBox="0 0 700 340" aria-hidden="true"><defs><clipPath id="wzc"><path d="M22 300 192 30 333 128 323 152 135 300z"/></clipPath></defs><g fill="none" stroke="currentColor" stroke-width="3"><path d="M22 300 192 30 333 128 323 152 135 300z"/><g clip-path="url(#wzc)"><line x1="0" y1="40" x2="700" y2="40"/><line x1="0" y1="56" x2="700" y2="56"/><line x1="0" y1="72" x2="700" y2="72"/><line x1="0" y1="88" x2="700" y2="88"/><line x1="0" y1="104" x2="700" y2="104"/><line x1="0" y1="120" x2="700" y2="120"/><line x1="0" y1="136" x2="700" y2="136"/><line x1="0" y1="152" x2="700" y2="152"/><line x1="0" y1="168" x2="700" y2="168"/><line x1="0" y1="184" x2="700" y2="184"/><line x1="0" y1="200" x2="700" y2="200"/><line x1="0" y1="216" x2="700" y2="216"/><line x1="0" y1="232" x2="700" y2="232"/><line x1="0" y1="248" x2="700" y2="248"/><line x1="0" y1="264" x2="700" y2="264"/><line x1="0" y1="280" x2="700" y2="280"/><line x1="0" y1="296" x2="700" y2="296"/></g></g><path d="M365 128 498 32 672 302 598 302z" fill="currentColor"/></svg>
+ <div class="wrap">
+  <div class="gr">
+   <div class="op"><a class="logo" href="#start"><svg viewBox="0 0 700 340" aria-hidden="true"><defs><clipPath id="lg2"><path d="M22 300 192 30 333 128 323 152 135 300z"/></clipPath></defs><g stroke="#fff" stroke-width="10" fill="none"><path d="M22 300 192 30 333 128 323 152 135 300z"/><g clip-path="url(#lg2)" stroke-width="8"><line x1="0" y1="48" x2="700" y2="48"/><line x1="0" y1="69" x2="700" y2="69"/><line x1="0" y1="90" x2="700" y2="90"/><line x1="0" y1="111" x2="700" y2="111"/><line x1="0" y1="132" x2="700" y2="132"/><line x1="0" y1="153" x2="700" y2="153"/><line x1="0" y1="174" x2="700" y2="174"/><line x1="0" y1="195" x2="700" y2="195"/><line x1="0" y1="216" x2="700" y2="216"/><line x1="0" y1="237" x2="700" y2="237"/><line x1="0" y1="258" x2="700" y2="258"/><line x1="0" y1="279" x2="700" y2="279"/></g><path d="M382 160 588 304"/></g><path d="M365 128 498 32 672 302 598 302z" fill="#fff"/></svg><span>MAZINI DESIGN</span></a><p style="margin-top:16px">Polska manufaktura autorskich mebli premium. Krótkie serie, ręczne wykonanie, wzory przemysłowe.</p></div>
+   <div><p class="h">Meble</p><ul><li><a href="#kolekcja">Komody</a></li><li><a href="#kolekcja">Regały</a></li><li><a href="#kolekcja">Stoliki</a></li><li><a href="#kolekcja">Wieszaki</a></li></ul></div>
+   <div><p class="h">Współpraca</p><ul><li><a href="#zamowienie">Na zamówienie</a></li><li><a href="#architekci">Dla architektów</a></li><li><a href="#kolory">Kolory</a></li></ul></div>
+   <div><p class="h">Kontakt</p><ul><li><a href="tel:+48787494404">787 494 404</a></li><li><a href="mailto:biuro@mazini.pl">biuro@mazini.pl</a></li><li>NIP 937 246 10 96</li></ul></div>
+  </div>
+  <div class="dol"><span>© <span id="rok">2026</span> Mazini Design</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=mazini.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+ </div>
+</footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie"><figure><img alt=""><figcaption></figcaption></figure><button class="x" type="button" aria-label="Zamknij">×</button><button class="p" type="button" aria-label="Poprzednie">‹</button><button class="n" type="button" aria-label="Następne">›</button></div>
+<script src="app.js" defer></script>
+</body>
+</html>
