@@ -66,7 +66,7 @@ h3{font-size:clamp(21px,1.6vw,26px)}
 .hero .cta{margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
 .hero .info{font-size:15px;color:var(--mute)}
 .hero picture{order:2;margin-top:10px;display:block}
-.hero picture img{width:100%;max-height:max(150px,calc(100svh - var(--hd) - var(--txh,430px)));object-fit:cover;object-position:50% 100%}
+.hero picture img{aspect-ratio:2560/1207;width:100%;max-height:max(150px,calc(100svh - var(--hd) - var(--txh,430px)));object-fit:cover;object-position:50% 100%}
 .hero .pod{order:1;margin-top:auto;padding:0 var(--pad);font-size:14px;color:#4B4550}
 @media (min-width:1200px){
  .hero{--ih:min(66svh,40vw);background:#FCFCFC url(foto/tlo-pas.webp) left bottom/100% var(--ih) no-repeat;min-height:max(600px,calc(100svh - var(--hd)))}
@@ -75,7 +75,7 @@ h3{font-size:clamp(21px,1.6vw,26px)}
  .hero h1{font-size:clamp(40px,3.3vw,62px)}
  .hero .lead{font-size:19px}
  .hero picture{position:absolute;right:0;bottom:0;margin:0}
- .hero picture img{height:var(--ih);width:auto;max-height:none;max-width:none}
+ .hero picture img{aspect-ratio:auto;height:var(--ih);width:auto;max-height:none;max-width:none}
  .hero .pod{position:absolute;right:var(--pad);bottom:24px;max-width:22em;text-align:right;padding:0;font-size:13px}
 }
 @media (min-width:1700px){.hero .tx{max-width:700px}}
@@ -226,7 +226,7 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--b);outline-offse
    <div class="cta"><a class="btn" href="#kolekcja">Zobacz kolekcję</a><span class="info">tel. 787 494 404, pn-pt 8:00-16:00</span></div>
   </div>
  </div>
- <picture><source media="(max-width:1199px)" srcset="foto/hero-m-480.webp 480w, foto/hero-m-640.webp 640w, foto/hero-m-800.webp 800w, foto/hero-m-1000.webp 1000w" sizes="100vw"><img src="foto/hero-d-1400.webp" srcset="foto/hero-d-1000.webp 1000w, foto/hero-d-1400.webp 1400w, foto/hero-d-1800.webp 1800w, foto/hero-d-2400.webp 2400w" sizes="(min-width:2200px) 1700px, 72vw" width="1400" height="802" fetchpriority="high" alt="Komoda Canto Mazini Design: liliowe szafki na magentowej stalowej kratownicy"></picture>
+ <picture><source media="(max-width:1199px)" srcset="foto/hero-m-480.webp 480w, foto/hero-m-640.webp 640w, foto/hero-m-800.webp 800w, foto/hero-m-1000.webp 1000w" sizes="100vw" width="2560" height="1207"><img src="foto/hero-d-1400.webp" srcset="foto/hero-d-1000.webp 1000w, foto/hero-d-1400.webp 1400w, foto/hero-d-1800.webp 1800w, foto/hero-d-2400.webp 2400w" sizes="(min-width:2200px) 1700px, 72vw" width="1400" height="802" fetchpriority="high" alt="Komoda Canto Mazini Design: liliowe szafki na magentowej stalowej kratownicy"></picture>
  <p class="pod">Komoda Canto, nominacja 4 Design Days 2026</p>
 </div>
 
